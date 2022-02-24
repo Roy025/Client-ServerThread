@@ -9,7 +9,6 @@ public class Client {
         Socket socket = new Socket("127.0.0.1", 22223);
         System.out.println("Client Connected..");
         new WriterThread(socket, "Client : ");
-        new ReaderThread(socket, "Client : ");
-
+        new ReaderThread(socket, "Server : ");
     }
 }

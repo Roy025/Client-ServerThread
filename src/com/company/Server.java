@@ -11,7 +11,7 @@ public class Server {
         Socket socket = serverSocket.accept();
         System.out.println("Client connected..");
         new WriterThread(socket, "Server : ");
-        new ReaderThread(socket, "Server : ");
+        new ReaderThread(socket, "Client : ");
     }
 
 }
